@@ -1,0 +1,278 @@
+{% extends "base.html" %}
+
+{% block page_contents %}
+
+    <div id="page_content" class="uk-height-1-1">
+
+        <div class="scrum_board_overflow">
+            <div id="scrum_board" class="uk-clearfix">
+                <div>
+                    <div class="scrum_column_heading_wrapper">
+                        <div class="scrum_column_heading"> To Do</div>
+                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
+                            <i class="md-icon material-icons">&#xE5D4;</i>
+                            <div class="uk-dropdown uk-dropdown-small">
+                                <ul class="uk-nav uk-nav-dropdown">
+                                    <li><a href="#new_task" data-uk-modal="{ center:true }">Add task</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Edit Column</a></li>
+                                    <li><a href="#" class="uk-text-danger">Delete Column</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrum_column">
+                        <div id="scrum_column_todo">
+                            <div>
+                                <div class="scrum_task critical">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-2</a></h3>
+                                    <p class="scrum_task_description">Eius numquam ducimus consequuntur molestias numquam eius iure.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Guillermo Lehner</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="scrum_task blocker">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-28</a></h3>
+                                    <p class="scrum_task_description">Quia laboriosam et blanditiis exercitationem iusto voluptatibus corrupti molestiae ut.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Hertha Lemke</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="scrum_task blocker">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-55</a></h3>
+                                    <p class="scrum_task_description">Voluptatum non et ut est temporibus voluptatum repellendus architecto sit quasi.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Electa Stark</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="scrum_column_heading_wrapper">
+                        <div class="scrum_column_heading">In analysis</div>
+                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
+                            <i class="md-icon material-icons">&#xE5D4;</i>
+                            <div class="uk-dropdown uk-dropdown-small">
+                                <ul class="uk-nav uk-nav-dropdown">
+                                    <li><a href="#new_task" data-uk-modal="{ center:true }">Add task</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Edit Column</a></li>
+                                    <li><a href="#" class="uk-text-danger">Delete Column</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrum_column">
+                        <div id="scrum_column_inAnalysis">
+                            <div>
+                                <div class="scrum_task minor">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-81</a></h3>
+                                    <p class="scrum_task_description">Magni rem voluptatibus pariatur et ex ea.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Ezekiel Schaefer</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="scrum_task minor">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-132</a></h3>
+                                    <p class="scrum_task_description">Hic mollitia nulla nam fuga alias quis officiis fugit officia.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Anika Gleason</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="scrum_task blocker">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-91</a></h3>
+                                    <p class="scrum_task_description">Deleniti atque nobis vitae quod consequatur iure voluptatum qui neque id.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Cordia Farrell</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="scrum_task minor">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-101</a></h3>
+                                    <p class="scrum_task_description">Animi molestias id natus minima voluptatem.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Eileen Herzog</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="scrum_task critical">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-130</a></h3>
+                                    <p class="scrum_task_description">Quod non ab nam sunt eaque libero blanditiis esse.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Trent Dare</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="scrum_column_heading_wrapper">
+                        <div class="scrum_column_heading">In progress</div>
+                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
+                            <i class="md-icon material-icons">&#xE5D4;</i>
+                            <div class="uk-dropdown uk-dropdown-small">
+                                <ul class="uk-nav uk-nav-dropdown">
+                                    <li><a href="#new_task" data-uk-modal="{ center:true }">Add task</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Edit Column</a></li>
+                                    <li><a href="#" class="uk-text-danger">Delete Column</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrum_column">
+                        <div id="scrum_column_inProgress">
+                            <div>
+                                <div class="scrum_task blocker">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-229</a></h3>
+                                    <p class="scrum_task_description">Dolorem praesentium officiis dolorum nisi perferendis molestiae quasi.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Halie Rolfson</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="scrum_task minor">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-209</a></h3>
+                                    <p class="scrum_task_description">Accusantium ducimus expedita culpa quaerat pariatur debitis dolorum vel perferendis.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Tatyana Krajcik</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="scrum_column_heading_wrapper">
+                        <div class="scrum_column_heading">Done</div>
+                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
+                            <i class="md-icon material-icons">&#xE5D4;</i>
+                            <div class="uk-dropdown uk-dropdown-small">
+                                <ul class="uk-nav uk-nav-dropdown">
+                                    <li><a href="#new_task" data-uk-modal="{ center:true }">Add task</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Edit Column</a></li>
+                                    <li><a href="#" class="uk-text-danger">Delete Column</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrum_column">
+                        <div id="scrum_column_done">
+                            <div>
+                                <div class="scrum_task blocker">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-340</a></h3>
+                                    <p class="scrum_task_description">Ratione dolor incidunt nulla dolorem suscipit.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Madelynn Hoeger</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="scrum_task critical">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-333</a></h3>
+                                    <p class="scrum_task_description">Aspernatur ut est dolorum sint est molestias occaecati itaque molestiae.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Olin Harris</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="scrum_task blocker">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-336</a></h3>
+                                    <p class="scrum_task_description">Nulla aut quis est consectetur perspiciatis exercitationem quis.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Garett Maggio</a></p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="scrum_task critical">
+                                    <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-336</a></h3>
+                                    <p class="scrum_task_description">Aliquam blanditiis explicabo labore praesentium a accusamus.</p>
+                                    <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Willy Krajcik</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="md-fab-wrapper">
+        <a class="md-fab md-fab-accent md-fab-wave" href="#new_task" data-uk-modal="{ center:true }">
+            <i class="material-icons">&#xE145;</i>
+        </a>
+    </div>
+
+    <div class="uk-modal" id="new_task">
+        <div class="uk-modal-dialog">
+            <div class="uk-modal-header">
+                <h3 class="uk-modal-title">ALTAIR-</h3>
+            </div>
+            <form class="uk-form-stacked">
+                <div class="uk-margin-medium-bottom">
+                    <label for="task_title">Title</label>
+                    <input type="text" class="md-input" id="Task_title" name="snippet_title"/>
+                </div>
+                <div class="uk-margin-medium-bottom">
+                    <label for="task_description">Description</label>
+                    <textarea class="md-input" id="task_description" name="task_description"></textarea>
+                </div>
+                <div class="uk-margin-medium-bottom">
+                    <label for="task_assignee" class="uk-form-label">Assignee</label>
+                    <select class="uk-form-width-medium" name="task_assignee" id="task_assignee" data-md-selectize-inline>
+                        <option value="user_me">Me</option>
+                        <option value="user_1">Philip Vandervort</option>
+                        <option value="user_2">Cullen Dibbert</option>
+                        <option value="user_3">Jaylan Hickle</option>
+                        <option value="user_4">Mckenna Mann</option>
+                    </select>
+                </div>
+                <div class="uk-margin-medium-bottom">
+                    <label for="task_priority" class="uk-form-label">Priority</label>
+                    <div>
+                        <span class="icheck-inline">
+                            <input type="radio" name="task_priority" id="task_priority_minor" data-md-icheck />
+                            <label for="task_priority_minor" class="inline-label uk-badge uk-badge-success">MINOR</label>
+                        </span>
+                        <span class="icheck-inline">
+                            <input type="radio" name="task_priority" id="task_priority_critical" data-md-icheck />
+                            <label for="task_priority_critical" class="inline-label uk-badge uk-badge-warning">CRITICAL</label>
+                        </span>
+                        <span class="icheck-inline">
+                            <input type="radio" name="task_priority" id="task_priority_blocker" data-md-icheck />
+                            <label for="task_priority_blocker" class="inline-label uk-badge uk-badge-danger">BLOCKER</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <button type="button" class="md-btn md-btn-flat uk-modal-close md-btn-wave">Close</button><button type="button" class="md-btn md-btn-flat md-btn-flat-primary md-btn-wave" id="snippet_new_save">Add Task</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="uk-modal" id="task_info">
+        <div class="uk-modal-dialog">
+            <div class="uk-modal-header">
+                <span class="uk-badge uk-badge-danger uk-float-right">Blocker</span>
+                <h3 class="uk-modal-title">ALTAIR-</h3>
+            </div>
+            <form class="uk-form-stacked">
+                <div class="uk-margin-medium-bottom">
+                    <p class="uk-margin-small-bottom uk-text-muted">Title</p>
+                    <p class="uk-margin-remove uk-text-large">Rerum quam dolores impedit in sapiente commodi consequuntur corrupti dolorum culpa.</p>
+                </div>
+                <div class="uk-margin-medium-bottom">
+                    <p class="uk-margin-small-bottom uk-text-muted">Description</p>
+                    <p class="uk-margin-remove">Velit adipisci porro voluptas odio amet ab doloremque suscipit est exercitationem consectetur quidem earum in voluptatem eum tempore dicta quia saepe aut aut ab enim voluptatem nihil hic et officia maxime quis qui.</p>
+                </div>
+                <div class="uk-margin-medium-bottom">
+                    <p class="uk-margin-small-bottom uk-text-muted">Assignee</p>
+                    <p class="uk-margin-remove">Tate O'Kon</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <button type="button" class="md-btn md-btn-flat uk-modal-close md-btn-wave">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block custom_javascripts %}
+
+    <script src="{{ url_for('static', filename='bower_components/dragula.js/dist/dragula.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/pages/page_scrum_board.min.js') }}"></script>
+{% endblock %}
