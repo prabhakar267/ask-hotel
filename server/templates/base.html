@@ -21,13 +21,13 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='bower_components/metrics-graphics/dist/metricsgraphics.css')}}">
         <!-- chartist -->
         <link rel="stylesheet" href="{{ url_for('static', filename='bower_components/chartist/dist/chartist.min.css')}}">
-    
+
     <!-- uikit -->
     <link rel="stylesheet" href="{{ url_for('static', filename='bower_components/uikit/css/uikit.almost-flat.min.css')}}" media="all">
 
     <!-- flag icons -->
     <link rel="stylesheet" href="{{ url_for('static', filename='icons/flags/flags.min.css')}}" media="all">
-    
+
     <!-- altair admin -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.min.css')}}" media="all">
 
@@ -47,17 +47,17 @@
     <header id="header_main">
         <div class="header_main_content">
             <nav class="uk-navbar">
-                                
+
                 <!-- main sidebar switch -->
                 <a href="#" id="sidebar_main_toggle" class="sSwitch sSwitch_left">
                     <span class="sSwitchIcon"></span>
                 </a>
-                
+
                 <!-- secondary sidebar switch -->
                 <a href="#" id="sidebar_secondary_toggle" class="sSwitch sSwitch_right sidebar_secondary_check">
                     <span class="sSwitchIcon"></span>
                 </a>
-                
+
                 <div class="uk-navbar-flip">
                     <ul class="uk-navbar-nav user_actions">
                         <li><a href="#" id="full_screen_toggle" class="user_action_icon uk-visible-large"><i class="material-icons md-24 md-light">&#xE5D0;</i></a></li>
@@ -191,21 +191,21 @@
                         <span class="menu_icon"><i class="material-icons">&#xE871;</i></span>
                         <span class="menu_title">Dashboard</span>
                     </a>
-                    
+
                 </li>
                 <li title="Mailbox">
                     <a href="page_mailbox.html">
                         <span class="menu_icon"><i class="material-icons">&#xE158;</i></span>
                         <span class="menu_title">Mailbox</span>
                     </a>
-                    
+
                 </li>
                 <li title="Invoices">
                     <a href="page_invoices.html">
                         <span class="menu_icon"><i class="material-icons">&#xE53E;</i></span>
                         <span class="menu_title">Invoices</span>
                     </a>
-                    
+
                 </li>
                 <li title="Chats">
                     <a href="#">
@@ -216,35 +216,35 @@
                         <li><a href="page_chat.html">Regular Chat</a></li>
                         <li><a href="page_chat_small.html">Chatboxes</a></li>
                     </ul>
-                
+
                 </li>
                 <li title="Scrum Board">
                     <a href="page_scrum_board.html">
                         <span class="menu_icon"><i class="material-icons">&#xE85C;</i></span>
                         <span class="menu_title">Scrum Board</span>
                     </a>
-                    
+
                 </li>
                 <li title="Snippets">
                     <a href="page_snippets.html">
                         <span class="menu_icon"><i class="material-icons">&#xE86F;</i></span>
                         <span class="menu_title">Snippets</span>
                     </a>
-                    
+
                 </li>
                 <li title="User Profile">
                     <a href="page_user_profile.html">
                         <span class="menu_icon"><i class="material-icons">&#xE87C;</i></span>
                         <span class="menu_title">User Profile</span>
                     </a>
-                    
+
                 </li>
                 <li title="Sticky Notes">
                     <a href="page_sticky_notes.html">
                         <span class="menu_icon"><i class="material-icons">&#xE8F0;</i></span>
                         <span class="menu_title">Sticky Notes</span>
                     </a>
-                    
+
                 </li>
                 <li title="Forms">
                     <a href="#">
@@ -264,7 +264,7 @@
                         <li><a href="forms_wysiwyg_inline.html">Ckeditor Inline</a></li>
                         <li><a href="forms_wysiwyg_tinymce.html">TinyMCE</a></li>
                             </ul>
-                
+
                 </li>
                 <li title="Layout">
                     <a href="#">
@@ -275,7 +275,7 @@
                         <li><a href="layout_top_menu.html">Top Menu</a></li>
                         <li><a href="layout_header_full.html">Full Header</a></li>
                     </ul>
-                
+
                 </li>
                 <li title="Kendo UI Widgets">
                     <a href="#">
@@ -299,7 +299,7 @@
                         <li><a href="kendoui_toolbar.html">Toolbar</a></li>
                         <li><a href="kendoui_window.html">Window</a></li>
                     </ul>
-                
+
                 </li>
                 <li title="Components">
                     <a href="#">
@@ -337,7 +337,7 @@
                         <li><a href="components_tooltips.html">Tooltips</a></li>
                         <li><a href="components_typography.html">Typography</a></li>
                     </ul>
-                
+
                 </li>
                 <li title="E-commerce">
                     <a href="#">
@@ -350,7 +350,7 @@
                         <li><a href="ecommerce_products_grid.html">Products Grid</a></li>
                         <li><a href="ecommerce_products_list.html">Products List</a></li>
                     </ul>
-                
+
                 </li>
                 <li title="Plugins">
                     <a href="#">
@@ -377,7 +377,7 @@
                         <li><a href="plugins_tree.html">Tree</a></li>
                         <li><a href="plugins_vector_maps.html">Vector Maps</a></li>
                     </ul>
-                
+
                 </li>
                 <li title="Pages">
                     <a href="#">
@@ -407,7 +407,7 @@
                         <li><a href="error_404.html">Error 404</a></li>
                         <li><a href="error_500.html">Error 500</a></li>
                             </ul>
-                
+
                 </li>
                                 <li>
                     <a href="#">
@@ -511,7 +511,10 @@
 
     <!--  dashbord functions -->
     <script src="{{ url_for('static', filename='js/pages/dashboard.min.js')}}"></script>
-    
+
+    <!-- custom js -->
+    <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
+
     <script>
         $(function() {
             if(isHighDensity()) {

@@ -70,6 +70,6 @@ def add_request_to_panel(device_id, user_query, mode):
 	# except e:
 	# 	db.rollback()
 	# 	success = False
-	add_to_conventional_data_store(device_id, user_query, mode)
+	add_to_conventional_data_store(room_id, user_query, mode)
 
 	return True
