@@ -14,6 +14,7 @@ def add_to_conventional_data_store(room_id, query, mode):
 	item['query'] = query
 	item['mode'] = mode
 	item['created_tx'] = time.time()
+	item['done'] = 0
 	store.append(item)
 	with open('static/servicesTodo.json', 'r+') as f:
 	    text = f.read()
@@ -28,6 +29,8 @@ def update_on_conventional_data_store(index, mode):
 		return False
 
 	store[index]['mode'] = mode
+	if mode == 5:
+		store[index]['done'] = 1
 	with open('static/servicesTodo.json', 'r+') as f:
 	    text = f.read()
 	    f.seek(0)

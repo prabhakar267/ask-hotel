@@ -1,3 +1,7 @@
 .dragula-vertical {
   min-height: 80px;
 }
+
+#scrum_column_done {
+  background-color: #98ec98;
+}

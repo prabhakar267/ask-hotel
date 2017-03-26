@@ -16,7 +16,7 @@ function pollServices() {
     data: {t_id: makeid()},
     success: function(r) {
       $('.scrum_column>div').empty();
-
+      r = r.filter(task => task.done != 5)
       r.forEach(task => {
         // task.created_tx = Number(task.created_tx.split('.')[0]);
         var date = new Date(task.created_tx);
@@ -46,8 +46,7 @@ function pollServices() {
             break;
           case 4:
             $('#scrum_column_housekeeping').append(template);
-          case 5:
-            $('#scrum_column_done').append(template);
+            break;
         }
       });
     }

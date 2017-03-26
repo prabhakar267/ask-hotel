@@ -19,8 +19,8 @@ def main():
 @app.route('/services', methods=['GET', 'POST'])
 def service():
 	if request.method == 'POST':
-		device_id = request.args.get("device")
-		query = request.args.get("query")
+		device_id = request.form.get("device")
+		query = request.form.get("query")
 
 		if add_request_to_panel(device_id, query, 2):
 			return "ok"
