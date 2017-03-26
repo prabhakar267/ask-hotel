@@ -29,6 +29,12 @@ def service():
 	elif request.method == 'GET':
 		return send_from_directory('static', 'servicesTodo.json')
 
+@app.route('/food', methods=['POST'])
+def food():
+	order = request.form.get('order')
+	print order
+	return "ok"
+
 @app.route('/update/services', methods=['GET'])
 def update_services():
 	req_id = int(request.args.get("id"))
