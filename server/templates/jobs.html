@@ -41,10 +41,18 @@
                         </div>
                     </div>
                     <div class="scrum_column">
-                        <div id="scrum_column_restaurant"></div>
+                        <div id="scrum_column_restaurant">
+                          <!-- <div>
+                              <div class="scrum_task blocker">
+                                  <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-229</a></h3>
+                                  <p class="scrum_task_description">Dolorem praesentium officiis dolorum nisi perferendis molestiae quasi.</p>
+                                  <p class="scrum_task_info"><span class="uk-text-muted">Assignee:</span> <a href="#">Halie Rolfson</a></p>
+                              </div>
+                          </div> -->
+                        </div>
                     </div>
                 </div>
-                <div>
+                <!-- <div>
                     <div class="scrum_column_heading_wrapper">
                         <div class="scrum_column_heading">Restaurant Orders Pending</div>
                         <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
@@ -81,10 +89,10 @@
                     <div class="scrum_column">
                         <div id="scrum_column_restaurant"></div>
                     </div>
-                </div>
+                </div> -->
                 <div>
                     <div class="scrum_column_heading_wrapper">
-                        <div class="scrum_column_heading">In progress</div>
+                        <div class="scrum_column_heading">Housekeeping</div>
                         <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
                             <i class="md-icon material-icons">&#xE5D4;</i>
                             <div class="uk-dropdown uk-dropdown-small">
@@ -98,7 +106,7 @@
                         </div>
                     </div>
                     <div class="scrum_column">
-                        <div id="scrum_column_inProgress">
+                        <div id="scrum_column_housekeeping">
                             <div>
                                 <div class="scrum_task blocker">
                                     <h3 class="scrum_task_title"><a href="#task_info" data-uk-modal="{ center:true }">Altair-229</a></h3>
@@ -254,5 +262,5 @@
 {% block custom_javascripts %}
 
     <script src="{{ url_for('static', filename='bower_components/dragula.js/dist/dragula.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/pages/page_scrum_board.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/pages/page_scrum_board.js') }}"></script>
 {% endblock %}

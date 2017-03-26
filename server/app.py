@@ -51,6 +51,13 @@ def dashboard_jobs():
 	ctx = {"product_name" : PRODUCT_NAME}
 	return render_template('jobs.html', **ctx)
 
+# @app.after_request
+# def add_header(response):
+# 	response.headers['X-UA-Compatible'] = 'IE=Edge,chrome=1'
+# 	if ('Cache-Control' not in response.headers):
+# 		response.headers['Cache-Control'] = 'public, max-age=600'
+# 	return response
+
 
 if __name__ == "__main__":
 	app.run(debug=True, host="0.0.0.0", threaded=True)
