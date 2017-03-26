@@ -1,0 +1,53 @@
+{
+  "intents": [
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.StartOverIntent"
+    },
+    {
+      "intent": "OrderFood"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    },
+    {
+      "intent": "ContinueOrder",
+      "slots": [
+        {
+          "name": "food",
+          "type": "FOOD"
+        },
+        {
+          "name": "number",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent" : "WakeUpCall",
+      "slots" : [
+        {
+          "name": "time",
+          "type": "AMAZON.TIME"
+        }
+      ]
+    },
+    {
+      "intent" : "OtherServices",
+      "slots" : [
+        {
+          "name": "food",
+          "type": "FOOD"
+        }
+      ]
+    }
+  ]
+}

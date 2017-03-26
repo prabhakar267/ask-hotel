@@ -1,0 +1,10 @@
+ContinueOrder {number} {food}
+
+OrderFood order food
+OrderFood I want to order food
+OrderFood I am hungry
+OrderFood I want food
+
+WakeUpCall wake me up at {time}
+
+OtherServices Room service {food}
