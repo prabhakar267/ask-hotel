@@ -23,7 +23,7 @@ public class HotelSpeechletRequestStreamHandler extends SpeechletRequestStreamHa
          * Alexa Skill and put the relevant Application Ids in this Set.
          */
         supportedApplicationIds = new HashSet<String>();
-        supportedApplicationIds.add("amzn1.ask.skill.aa21d810-55c4-4b96-ad33-a93e60f5cf4b");
+        supportedApplicationIds.add("amzn1.ask.skill.*********************************************");
     }
 
     public HotelSpeechletRequestStreamHandler() {
