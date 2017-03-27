@@ -5,7 +5,7 @@ import json
 from utils import add_request_to_panel, add_to_conventional_data_store as add, update_on_conventional_data_store as update
 
 
-PRODUCT_NAME = "hotel shit"
+PRODUCT_NAME = "Ask Alexa"
 
 
 app = Flask(__name__, static_url_path='')
@@ -46,24 +46,13 @@ def update_services():
 	return "not ok"
 
 
-@app.route('/dashboard', methods=['GET'])
-def dashboard_index():
-	ctx = {"product_name" : PRODUCT_NAME}
-	return render_template('index.html', **ctx)
-
-
+# Dashboard Routes
+ 
 @app.route('/dashboard/jobs', methods=['GET'])
 def dashboard_jobs():
 	ctx = {"product_name" : PRODUCT_NAME}
 	return render_template('jobs.html', **ctx)
 
-# @app.after_request
-# def add_header(response):
-# 	response.headers['X-UA-Compatible'] = 'IE=Edge,chrome=1'
-# 	if ('Cache-Control' not in response.headers):
-# 		response.headers['Cache-Control'] = 'public, max-age=600'
-# 	return response
-
-
 if __name__ == "__main__":
 	app.run(debug=True, host="0.0.0.0", threaded=True)
+
