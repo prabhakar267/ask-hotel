@@ -1,6 +1,6 @@
 # Ask Hotel
 
-<img src="https://www.ciinc.com/wp-content/uploads/2017/01/Amazon-Alexa-logo_transparent12.png">
+<img src="http://trayak.com/wp-content/uploads/2017/04/Amazon-Alexa-logo.png">
 
 > An alexa skill to automate hotel operations reducing efforts and time for hotel administration and staff. It can take food orders, and request for other hotel services. All the requests are automatically served and presented to hotel staff in a user friendly dashboard for them to monitor.
 
